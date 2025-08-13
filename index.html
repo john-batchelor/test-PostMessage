@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test postMessage recieved</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <script>
+      window.addEventListener(
+        "message",
+        (event) => {
+          console.log("event", event);
+        },
+        false,
+      );
+    </script>
+  </body>
+</html>
