@@ -6,11 +6,16 @@
   <body>
     <h1>Hello World!</h1>
 
+    <textarea id="code" readonly></textarea>
+
     <script>
+      const codeBlock = document.getElementById("code");
       window.addEventListener(
         "message",
         (event) => {
           console.log("event", event);
+
+          code.value = JSON.stringify(event);
         },
         false,
       );
